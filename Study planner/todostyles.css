@@ -39,6 +39,7 @@ body {
     text-decoration: underline;
 }
 
+/* container styling */
 .container {
     width: 90%;
     max-width: 1200px;
@@ -54,6 +55,7 @@ body {
     margin-left: 90px;
     margin-top: 20px;
 }
+
 .profile {
     grid-column: span 3;
     display: flex;
@@ -71,6 +73,7 @@ body {
     border-radius: 50%;
     background-color: #2a4f62;
 }
+/* dashboard section styling*/
 .to-do, .schedule, .notes, .calendar, .clock, .stopwatch {
     background: #2a4f62;
     color: #fff;
@@ -80,15 +83,18 @@ body {
     flex-direction: column;
     gap: 10px;
 }
+/* heading */
 .to-do h2, .schedule h2, .notes h2, .calendar h2, .clock h2, .stopwatch h2 {
     font-size: 1.2em;
     font-weight: bold;
 }
+/* input */
 .to-do input, .schedule input, .notes input {
     padding: 8px;
     border: none;
     border-radius: 5px;
 }
+/* button */
 .to-do button, .schedule button, .notes button {
     padding: 8px;
     background: #58a4b0;
@@ -97,6 +103,7 @@ body {
     border-radius: 5px;
     cursor: pointer;
 }
+/* list  */
 .to-do ul, .schedule ul, .notes ul {
     list-style: none;
 }
@@ -116,6 +123,7 @@ iframe {
 .calendar iframe {
     height: 300px;
 }
+/*stopwatch  */
 .stopwatch-controls button {
     margin-right: 5px;
     padding: 8px;
@@ -125,11 +133,14 @@ iframe {
     border-radius: 5px;
     cursor: pointer;
 }
+
+/* calendar styling */
 .calendar input[type="date"] {
     padding: 8px;
     margin-top: 10px;
     border-radius: 5px;
 }
+/* motivation quote section*/
 .motivational-quote-section {
     background-color: #2a4f62; /* White background to match */
     border-radius: 10px;
@@ -152,7 +163,7 @@ iframe {
     color: white;
     margin-bottom: 15px;
   }
-  
+/*   button styling */
   .motivational-quote-section button {
     background-color: #58a4b0; /* Button color to match theme */
     border: none;
