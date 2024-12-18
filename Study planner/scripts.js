@@ -1,3 +1,4 @@
+// add to do tasks
 function addTodo() {
     const todoInput = document.getElementById('todo-input');
     const todoList = document.getElementById('todo-list');
@@ -9,6 +10,7 @@ function addTodo() {
     }
 }
 
+// add time schedule with tasks
 function addSchedule() {
     const scheduleInput = document.getElementById('schedule-input');
     const startTime = document.getElementById('start-time').value;
@@ -24,6 +26,7 @@ function addSchedule() {
     }
 }
 
+//add notes
 function addNote() {
     const notesInput = document.getElementById('notes-input');
     const notesList = document.getElementById('notes-list');
@@ -34,7 +37,7 @@ function addNote() {
         notesInput.value = '';
     }
 }
-
+// stopwatch
 let stopwatchInterval;
 let stopwatchTime = 0;
 
@@ -45,6 +48,7 @@ function formatTime(seconds) {
     return `${hrs}:${mins}:${secs}`;
 }
 
+//stopwatch(start)
 function startStopwatch() {
     if (!stopwatchInterval) {
         stopwatchInterval = setInterval(() => {
@@ -54,17 +58,20 @@ function startStopwatch() {
     }
 }
 
+//(stop)
 function stopStopwatch() {
     clearInterval(stopwatchInterval);
     stopwatchInterval = null;
 }
 
+//(reset)
 function resetStopwatch() {
     stopStopwatch();
     stopwatchTime = 0;
     document.getElementById('stopwatch-display').textContent = "00:00:00";
 }
 
+//motivational quotes
 const quotes = [
     "Believe in yourself and all that you are.",
     "Dream big. Work hard. Stay focused.",
