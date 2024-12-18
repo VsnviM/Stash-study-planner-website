@@ -1,9 +1,11 @@
+/* general reset */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
 }
+/* body styling */
 body {
     background: linear-gradient(to bottom , #2a4f62, #58a4b0);
     justify-content: center;
